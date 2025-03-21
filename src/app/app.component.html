@@ -1,0 +1,18 @@
+<style>
+
+</style>
+
+<main class="main">
+  <div class="container">
+    <button *ngIf="showPopup === false" (click)="dibujarFlores()">click me</button>
+    <div class="lluvia-flores" id="lluviaFlores"></div>
+  </div>
+  <div *ngIf="showPopup" class="popup">
+    <div class="popup-content">
+      <p>Aqui en mexico te esperan las flores de verdad, pasala bonito, tq <3</p>
+      <button (click)="cerrarPopup()">Cerrar</button>
+    </div>
+  </div>
+</main>
+
+<router-outlet />

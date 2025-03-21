@@ -1,0 +1,27 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #fdc5a7;
+    border: 1px;
+    border-color: #bd4504;
+    border-style: solid;
+    color: #bd4504;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 10; /* Para que el botón siempre esté arriba */
+    font-family: "Pixelify Sans", sans-serif;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
